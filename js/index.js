@@ -1,39 +1,39 @@
 /**
- * Created by Ìì×ð on 2016/10/7.
+ * Created by å¤©å°Š on 2016/10/7.
  */
 
-//TODO ÊÖÐ´Ò»¶Îjs Ä£ÄâÊµÏÖÊÖ·çÇÙÐ§¹û
-$("h2 a").on("click",function(e){
-    e.preventDefault();
-    $(this).parent().parent().parent().next().toggleClass("active");
-    var cls=$(this).find("span:last-child").attr("class");
-    if(cls.indexOf("down")!=-1){
-        $(this).find("span:last-child").attr("class","glyphicon glyphicon-chevron-up pull-right");
-    }else{
-        $(this).find("span:last-child").attr("class","glyphicon glyphicon-chevron-down pull-right");
+//TODO æ‰‹å†™ä¸€æ®µjs æ¨¡æ‹Ÿå®žçŽ°æ‰‹é£Žç´æ•ˆæžœ
+$("h2 a").on("click", function (e) {
+  e.preventDefault();
+  $(this).parent().parent().parent().next().toggleClass("active");
+  var cls = $(this).find("span:last-child").attr("class");
+  if (cls.indexOf("down") != -1) {
+    $(this).find("span:last-child").attr("class", "glyphicon glyphicon-chevron-up pull-right");
+  } else {
+    $(this).find("span:last-child").attr("class", "glyphicon glyphicon-chevron-down pull-right");
+  }
+});
+//TODO æŽ§åˆ¶å›¾ç‰‡çš„æ ‡é¢˜çš„æ˜¾ç¤ºå’Œéšè—
+$(".thumbnail").on("mouseenter", function () {
+  var top = parseInt(window.getComputedStyle($(this).find("img")[0]).marginTop);
+  var timer = setInterval(function () {
+    $(this).find("img").css("margin-top", top);
+    if (top > -36) {
+      top -= 3;
+    } else {
+      clearInterval(timer);
     }
+  }.bind(this), 30);
 });
-//TODO ¿ØÖÆÍ¼Æ¬µÄ±êÌâµÄÏÔÊ¾ºÍÒþ²Ø
-$(".thumbnail").on("mouseenter",function(){
-    var top=parseInt(window.getComputedStyle($(this).find("img")[0]).marginTop);
-    var timer=setInterval(function(){
-        $(this).find("img").css("margin-top",top);
-        if(top>-36){
-            top-=3;
-        }else{
-            clearInterval(timer);
-        }
-    }.bind(this),30);
+$(".thumbnail").on("mouseleave", function () {
+  var top = parseInt(window.getComputedStyle($(this).find("img")[0]).marginTop);
+  var timer = setInterval(function () {
+    $(this).find("img").css("margin-top", top);
+    if (top < 0) {
+      top += 3;
+    } else {
+      clearInterval(timer);
+    }
+  }.bind(this), 30);
 });
-$(".thumbnail").on("mouseleave",function(){
-    var top=parseInt(window.getComputedStyle($(this).find("img")[0]).marginTop);
-    var timer=setInterval(function(){
-        $(this).find("img").css("margin-top",top);
-        if(top<0){
-            top+=3;
-        }else{
-            clearInterval(timer);
-        }
-    }.bind(this),30);
-});
-$(".box").siblings().css("display","none");
+$(".box").siblings().css("display", "none");

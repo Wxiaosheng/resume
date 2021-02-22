@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
   <title>Tianzun</title>
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel='shortcut icon' href='favicon.ico'>
   <!--[if lt IE 9]>
@@ -17,270 +18,289 @@
   <![endif]-->
   <script src="http://api.map.baidu.com/api?v=2.0&ak=ZcAbmGWwaK7wMKGDuUC2EGKilsUUREGC"></script>
 </head>
+
 <body>
-<!-- 外层定位元素 -->
-<div class="box">
-  <div class="container">
-    <div class="row">
-      <!-- 个人信息概述 分为2大个部分-->
-      <div class="col-md-3 col-md-push-9">
-        <div class="row  header">
-          <!-- 头像 -->
-          <div class="col-md-12 col-sm-3"><img class="img-responsive img-circle" src="images/img/center.jpg"/></div>
-          <!-- 个人信息简介 -->
-          <div class="col-md-12 col-sm-9">
-            <div class="row">
-              <div class="col-xs-12 page-align">
-                <span>汪 小 胜</span><br/>
-                <span>Web designer</span>
-                <div>
-                  <span class="glyphicon glyphicon-map-marker"></span>
-                  中国 , 上海
+  <!-- 外层定位元素 -->
+  <div class="box">
+    <div class="container">
+      <div class="row">
+        <!-- 个人信息概述 分为2大个部分-->
+        <div class="col-md-3 col-md-push-9">
+          <div class="row  header">
+            <!-- 头像 -->
+            <div class="col-md-12 col-sm-3"><img class="img-responsive img-circle" src="images/img/center.jpg" /></div>
+            <!-- 个人信息简介 -->
+            <div class="col-md-12 col-sm-9">
+              <div class="row">
+                <div class="col-xs-12 page-align">
+                  <span>汪 小 胜</span><br />
+                  <span>Web designer</span>
+                  <div>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    中国 , 上海
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-12 hidden-xs grpj">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是一名初级前段工程师，刚入行不久的我，希望和更多的同仁一起成长，也希望遇见大神，带我装逼带我飞！</p>
-              </div>
-              <div class="col-xs-12 hidden-sm hidden-xs">
-                <h3>网络社交</h3>
-                <ul class="list-inline xtubiao">
-                  <li> <a class="btn btn-default" href="#"><span class="fa fa-qq"></span></a></li>
-                  <li><a class="btn btn-default" href="#"><span class="fa fa-weibo"></span></a></li>
-                  <li><a class="btn btn-default" href="#"><span class="fa fa-weixin"></span></a></li>
-                </ul>
+                <div class="col-xs-12 hidden-xs grpj">
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是一名初级前段工程师，刚入行不久的我，希望和更多的同仁一起成长，也希望遇见大神，带我装逼带我飞！
+                  </p>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-xs">
+                  <h3>网络社交</h3>
+                  <ul class="list-inline xtubiao">
+                    <li> <a class="btn btn-default" href="#"><span class="fa fa-qq"></span></a></li>
+                    <li><a class="btn btn-default" href="#"><span class="fa fa-weibo"></span></a></li>
+                    <li><a class="btn btn-default" href="#"><span class="fa fa-weixin"></span></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- 导航条 -->
-      <div class="col-md-1 col-sm-2 hidden-xs col-md-pull-3">
-        <ul class="nav nav-pills">
-          <li class="active"><a data-toggle="tab" href="#profile"><span class="glyphicon glyphicon-user"></span></a></li>
-          <li><a data-toggle="tab" href="#resume"><span class="glyphicon glyphicon-tasks"></span></a></li>
-          <li><a data-toggle="tab" href="#protfolio"><span class="glyphicon glyphicon-briefcase"></span></a></li>
-          <li><a data-toggle="tab" href="#blong"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
-          <li><a data-toggle="tab" href="#contact"><span class="glyphicon glyphicon-envelope"></span></a></li>
-        </ul>
-      </div>
-      <!-- 主体内容 -->
-      <div class="col-md-8 col-sm-10 col-md-pull-3">
-        <div class="tab-content">
-          <div class="row mod_tb"><div class="hidden-lg hidden-md hidden-sm">
-            <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-user"></span> 基本信息<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
-          </div></div>
-          <div class="tab-pane active" id="profile">
-            <div class="page-header">
-              <h3><i></i> 基本信息</h3>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-xs-12">
-                <h3>汪 小 胜</h3>
-                <ul class="list-group">
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-user"></span> 姓名</a>汪小胜</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-calendar"></span> 出生年月</a>1994-01-19</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-map-marker"></span> 住址</a>上海市 普陀区</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-envelope"></span> email</a>287915338@qq.com</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-phone"></span> 联系方式</a>17602186945</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-globe"></span> 实例网页</a><a target="_blank" href="https://wxiaosheng.github.io/games/2048">2048小游戏</a></li>
-                </ul>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个性温和，稳重和富有较强责任心，能快速融入一个新团队；对编程非常感兴趣，能快速接收新的事物，与时俱进的学习新的框架结构技术；具有良好的团队合作精神和协作能力，抗压能力强，热爱钻研、擅长交流等，自由发挥。</p>
-              </div>
-              <div class="col-sm-6 col-xs-12 clearfix">
-                <img class="img-responsive" src="images/img-profile/about_1.jpg"/>
+        <!-- 导航条 -->
+        <div class="col-md-1 col-sm-2 hidden-xs col-md-pull-3">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="tab" href="#profile"><span class="glyphicon glyphicon-user"></span></a>
+            </li>
+            <li><a data-toggle="tab" href="#resume"><span class="glyphicon glyphicon-tasks"></span></a></li>
+            <li><a data-toggle="tab" href="#protfolio"><span class="glyphicon glyphicon-briefcase"></span></a></li>
+            <li><a data-toggle="tab" href="#blong"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+            <!-- <li><a data-toggle="tab" href="#contact"><span class="glyphicon glyphicon-envelope"></span></a></li> -->
+          </ul>
+        </div>
+        <!-- 主体内容 -->
+        <div class="col-md-8 col-sm-10 col-md-pull-3">
+          <div class="tab-content">
+            <div class="row mod_tb">
+              <div class="hidden-lg hidden-md hidden-sm">
+                <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-user"></span>
+                    基本信息<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
               </div>
             </div>
-          </div>
-          <div class="row mod_tb"><div class="hidden-lg hidden-md hidden-sm">
-            <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-tasks"></span> 职业概况<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
-          </div></div>
-          <div class="tab-pane" id="resume">
-            <div class="page-header">
-              <h3><i></i> 职业概况</h3>
+            <div class="tab-pane active" id="profile">
+              <div class="page-header">
+                <h3><i></i> 基本信息</h3>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <h3>汪 小 胜</h3>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-user"></span> 姓名</a>汪小胜</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-calendar"></span>
+                        出生年月</a>1994-01-19</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-map-marker"></span>
+                        住址</a>上海市 浦东新区</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-envelope"></span>
+                        email</a>tian__zun@163.com</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-phone"></span>
+                        联系方式</a>17602186945</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-globe"></span> 实例网页</a><a
+                        target="_blank" href="https://wxiaosheng.github.io/games/2048">2048小游戏</a></li>
+                  </ul>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个性温和，稳重和富有较强责任心，能快速融入一个新团队；</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对编程非常感兴趣，能快速接收新的事物，与时俱进的学习新的框架结构技术；</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具有良好的团队合作精神和协作能力，抗压能力强，热爱钻研、擅长交流等，自由发挥。</p>
+                </div>
+                <div class="col-sm-6 col-xs-12 clearfix">
+                  <img class="img-responsive" src="images/img-profile/about_1.jpg" />
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <!-- 基本技能 -->
+            <div class="row mod_tb">
+              <div class="hidden-lg hidden-md hidden-sm">
+                <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-tasks"></span>
+                    职业概况<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
+              </div>
+            </div>
+            <div class="tab-pane" id="resume">
+              <div class="page-header">
+                <h3><i></i> 职业概况</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <!-- 职业技能 -->
+                    <div class="col-md-12">
+                      <div class="title-content">
+                        <h3>职业技能</h3>
+                      </div>
+                      <ol class="jdt">
+                        <li>熟练 HTML、CSS、JavaScript，掌握HTML5、CSS3、新增特性</li>
+                        <li>熟练使用ES5、ES6、ES7语法特性以及Sass、Less等CSS预处理器</li>
+                        <li>熟练使用React全家桶和redux状态管理工具以及antd、antd-mobile等UI框架</li>
+                        <li>熟练原型、原型链、作用域以及面向对象编程，熟悉 TypeScript 开发</li>
+                        <li>熟悉使用webpack并了解gulp等前端自动化构建工具，熟悉git操作流程进行团队协作开发项目</li>
+                        <li>熟悉原生 Node 模块，能独立实现一个的web服务器，了解 express 等框架的使用</li>
+                        <li>熟练掌握组件化思维以及善于使用组件化编程思想编程</li>
+                        <li>有良好的代码风格，通过添加注释提高代码可读性，注重代码质量、健壮性与扩展性</li>
+                      </ol>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="title-content">
+                        <h3>教育</h3>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5>高中 <a class="pull-right" href="#"><span class="glyphicon glyphicon-calendar"></span>
+                              2009-2012</a></h5>
+                          <a href="http://www.yxdqzx.com" target="_blank"><span class="glyphicon glyphicon-book"></span>
+                            岳西县店前中学</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5>大学本科（工学学士） <a class="pull-right" href="#"><span
+                                class="glyphicon glyphicon-calendar"></span>
+                              2012-2016</a></h5>
+                          <a href="http://www.syuctky.edu.cn/" target="_blank"><span
+                              class="glyphicon glyphicon-book"></span> 沈阳化工大学科亚学院</a>
+                          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本科期间的专业为 化学工程与工艺
+                            。在校期间，多次荣获三等奖学金，积极参加学校社团，活动等，拓展自身素质。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- 工作经历 -->
                   <div class="col-md-12">
                     <div class="title-content">
-                      <h3>基础技能</h3>
+                      <h3>工作经历</h3>
                     </div>
                     <div class="jdt">
-                      <span class="pull-left">HTML:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:70%">
-                          70%
-                        </div>
+                      <div class="project">
+                        <div class="project-name">上海喜马拉雅科技有限公司</div>
+                        <div class="project-time">2018-08 ~ 至今</div>
+                        <ul>
+                          <li>参与对部门的的PC官网、移动端网页的开发</li>
+                          <li>独立负责部分管理后台的搭建，并参与其他管理后台的迭代与维护</li>
+                          <li>独立负责一段时间喜马拉雅APP内积分商城兑换页面大迭代和维护</li>
+                        </ul>
                       </div>
-                      <span class="pull-left">CSS:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:70%">
-                          70%
-                        </div>
-                      </div>
-                      <span class="pull-left">JavaScript:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:60%">
-                          60%
-                        </div>
+                      <div class="project">
+                        <div class="project-name">北京无线天利移动信息技术股份有限公司上海分公司</div>
+                        <div class="project-time">2016-10 ~ 2018-08</div>
+                        <ul>
+                          <li>负责保险公司出单APP的开发迭代，包括 pad／iPad，安卓手机和iOS手机一共四个版本，这是一个混合开发的webapp</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <!-- 高级技能 -->
+                  <!-- 项目经历 -->
                   <div class="col-md-12">
                     <div class="title-content">
-                      <h3>高级技能</h3>
+                      <h3>项目经历</h3>
                     </div>
                     <div class="jdt">
-                      <span class="pull-left">PHP:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:30%">
-                          30%
-                        </div>
+                      <div class="xmjl">
+                        <div class="xmjl-title">1、喜马拉雅开发平台对外输出的移动端子站点（H5子站）</div>
+                        <p>独立负责子站的迭代开发，并且在公司业务规模飞速增长的条件下，使用 react 技术栈 从零重构旧版项目以满足复杂的业务场景以及各种设备中的访问体验，包括但不限于 使用 TS
+                          类型声明、ESLint 代码规范，引入 jest 单元测试、骨架屏、预渲染、异步加载、滚动懒加载等方式，使次日留存率增长 33.23%，DAU & 播放 DAU 增长 55.51%
+                        </p>
                       </div>
-                      <span class="pull-left">MySQL:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:30%">
-                          30%
-                        </div>
+                      <div class="xmjl">
+                        <div class="xmjl-title">2、喜马拉雅APP内积分商城兑换模块</div>
+                        <p>
+                          独立负责积分兑换页面的开发与迭代，对现有项目进行优化，包括用组件化思维拆分重新梳理项目，优化页面访问速度等，使得项目日订单数首次突破过万，积分消耗从接手前的不到1000万，到最后突破了5000万，提升了近4倍
+                        </p>
                       </div>
-                      <span class="pull-left">Bootstrap:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:60%">
-                          60%
-                        </div>
+                      <div class="xmjl">
+                        <div class="xmjl-title">3、权限管理后台</div>
+                        <p>负责维护管理后台日常开发和迭代，并且独立搭建管理后台，采用React+Antd+Webpack来构建整个项目的结构和规范，制定打包构建流程，提升运营效率以及站外优质能容渗透率 </p>
                       </div>
-                      <span class="pull-left">AngularJS:</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:50%">
-                          50%
-                        </div>
+                      <div class="xmjl">
+                        <div class="xmjl-title">4、保险出单混合WebAPP</div>
+                        <p>使用原生javascript开发业务代码，包括操作原生DOM以及逻辑校验功能等，且熟练使用 ajax
+                          与后端交互实现页面局部刷新效果，移动端项目使用promise，let/const，async/await 等新技术，来开发业务代码，提示用业务员操作体验和效率</p>
                       </div>
                     </div>
                   </div>
-                  <!-- 爱好 -->
-                  <div class="col-md-12">
-                    <div class="title-content">
-                      <h3>兴趣爱好</h3>
-                    </div>
-                    <div class="jdt">
-                      <span class="pull-left">阅读：</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:70%">
-                          70%
-                        </div>
-                      </div>
-                      <span class="pull-left">音乐：</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:10%">
-                          10%
-                        </div>
-                      </div>
-                      <span class="pull-left">单车：</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:5%">
-                          5%
-                        </div>
-                      </div>
-                      <span class="pull-left">游泳：</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-info" style="width:15%">
-                          15%
-                        </div>
-                      </div>
-                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row mod_tb">
+              <div class="hidden-lg hidden-md hidden-sm">
+                <h2><a class="btn btn-block" href="#resume"><span
+                      class="pull-left glyphicon glyphicon-briefcase"></span> 我的作品<span
+                      class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
+              </div>
+            </div>
+            <div class="tab-pane" id="protfolio">
+              <div class="page-header">
+                <h3><i></i> 我的作品</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a class="btn btn-success" href="#">全部</a>
+                  <a class="btn btn-danger" href="#">电商网站</a>
+                  <a class="btn btn-warning" href="#">小游戏</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="thumbnail" target="_blank" href="https://wxiaosheng.github.io/games/2048"><img
+                      class="img-responsive" src="images/2048.PNG" />
+                    <div class="img-title">2048小游戏</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row mod_tb">
+              <div class="hidden-lg hidden-md hidden-sm">
+                <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-bullhorn"></span>
+                    我的博客<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
+              </div>
+            </div>
+            <div class="tab-pane" id="blong">
+              <div class="page-header">
+                <h3><i></i> 我的博客</h3>
+              </div>
+              <a href="http://cnblogs.com/tianzun-blog" target="_blank">点击进入我的博客</a>
+            </div>
+            <div class="row mod_tb">
+              <div class="hidden-lg hidden-md hidden-sm">
+                <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-envelope"></span>
+                    如何联系<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
+              </div>
+            </div>
+            <div class="tab-pane" id="contact">
+              <div class="page-header">
+                <h3><i></i> 如何联系</h3>
+              </div>
+              <div id="my_map"></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-content">
+                    <h3>联系方式</h3>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-user"></span> 姓名：</a>汪小胜
+                    </li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-envelope"></span>
+                        email：</a>tian__zun@163.com</li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-phone"></span>
+                        联系方式：</a>17602186945</li>
+                  </ul>
+                  <div class="title-content">
+                    <h3>网络社交</h3>
+                  </div>
+                  <div class="xtubiao">
+                    <a class="btn btn-default" href="#"><span class="fa fa-qq"></span></a>
+                    <a class="btn btn-default" href="#"><span class="fa fa-weibo"></span></a>
+                    <a class="btn btn-default" href="#"><span class="fa fa-weixin"></span></a>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="title-content">
-                  <h3>教育</h3>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <h5>高中 <a class="pull-right" href="#"><span class="glyphicon glyphicon-calendar"></span> 2009-2012</a></h5>
-                    <a href="http://www.yxdqzx.com" target="_blank"><span class="glyphicon glyphicon-book"></span> 岳西县店前中学</a>
+                <div class="col-md-6">
+                  <div class="title-content">
+                    <h3>给我留言</h3>
                   </div>
+                  <form>
+                    <label for="you_name">姓名：</label>
+                    <input class="form-control" id="you_name" type="text" placeholder="请输入姓名" />
+                    <label for="you_email">邮箱：</label>
+                    <input class="form-control" id="you_email" type="text" placeholder="请输入邮箱" />
+                    <label for="mess">请输入留言</label>
+                    <textarea class="form-control" id="mess" style="width:90%;height: 200px;"></textarea>
+                  </form>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <h5>大学本科（工学学士） <a class="pull-right" href="#"><span class="glyphicon glyphicon-calendar"></span> 2012-2016</a></h5>
-                    <a href="http://www.syuctky.edu.cn/" target="_blank"><span class="glyphicon glyphicon-book"></span> 沈阳化工大学科亚学院</a>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本科期间的专业为 化学工程与工艺 。在校期间，多次荣获三等奖学金，积极参加学校社团，活动等，拓展自身素质。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mod_tb"><div class="hidden-lg hidden-md hidden-sm">
-            <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-briefcase"></span> 我的作品<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
-          </div></div>
-          <div class="tab-pane" id="protfolio">
-            <div class="page-header">
-              <h3><i></i> 我的作品</h3>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <a class="btn btn-success" href="#">全部</a>
-                <a class="btn btn-danger" href="#">电商网站</a>
-                <a class="btn btn-warning" href="#">小游戏</a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" target="_blank" href="https://wxiaosheng.github.io/games/2048"><img class="img-responsive" src="images/2048.PNG"/>
-                  <div class="img-title">2048小游戏</div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row mod_tb"><div class="hidden-lg hidden-md hidden-sm">
-            <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-bullhorn"></span> 我的博客<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
-          </div></div>
-          <div class="tab-pane" id="blong">
-            <div class="page-header">
-              <h3><i></i> 我的博客</h3>
-            </div>
-            <a href="http://cnblogs.com/tianzun-blog" target="_blank">点击进入我的博客</a>
-          </div>
-          <div class="row mod_tb"><div class="hidden-lg hidden-md hidden-sm">
-            <h2><a class="btn btn-block" href="#resume"><span class="pull-left glyphicon glyphicon-envelope"></span> 如何联系<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></h2>
-          </div></div>
-          <div class="tab-pane" id="contact">
-            <div class="page-header">
-              <h3><i></i> 如何联系</h3>
-            </div>
-            <div id="my_map"></div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="title-content">
-                  <h3>联系方式</h3>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-user"></span> 姓名：</a>汪小胜</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-envelope"></span> email：</a>287915338@qq.com</li>
-                  <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-phone"></span> 联系方式：</a>17602186945</li>
-                </ul>
-                <div class="title-content">
-                  <h3>网络社交</h3>
-                </div>
-                <div class="xtubiao">
-                  <a class="btn btn-default" href="#"><span class="fa fa-qq"></span></a>
-                  <a class="btn btn-default" href="#"><span class="fa fa-weibo"></span></a>
-                  <a class="btn btn-default" href="#"><span class="fa fa-weixin"></span></a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="title-content">
-                  <h3>给我留言</h3>
-                </div>
-                <form >
-                  <label for="you_name">姓名：</label>
-                  <input class="form-control" id="you_name" type="text" placeholder="请输入姓名"/>
-                  <label for="you_email">邮箱：</label>
-                  <input class="form-control" id="you_email" type="text" placeholder="请输入邮箱"/>
-                  <label for="mess">请输入留言</label>
-                  <textarea class="form-control" id="mess" style="width:90%;height: 200px;"></textarea>
-                </form>
               </div>
             </div>
           </div>
@@ -288,27 +308,27 @@
       </div>
     </div>
   </div>
-</div>
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/index.js"></script>
-<script>
-  //TODO 百度地图的使用
-  var map = new BMap.Map("my_map");
-  var grocoder= new BMap.Geocoder();
-  grocoder.getPoint("上海市普陀区真北路1817弄",function(point){
-    //TODO 标注
-    var marker = new BMap.Marker(point);
-    map.addOverlay(marker);
-    //TODO 重新设置地图的中心点和显示级别
-    map.centerAndZoom(point,15);
-  });
-  //设置可滚轮缩放
-  map.enableScrollWheelZoom();
-  //设置比例尺控件在右上
-  var scaleControl = new BMap.ScaleControl({
-    anchor : BMAP_ANCHOR_TOP_RIGHT
-  });
-</script>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    //TODO 百度地图的使用
+    var map = new BMap.Map("my_map");
+    var grocoder = new BMap.Geocoder();
+    grocoder.getPoint("上海市普陀区真北路1817弄", function (point) {
+      //TODO 标注
+      var marker = new BMap.Marker(point);
+      map.addOverlay(marker);
+      //TODO 重新设置地图的中心点和显示级别
+      map.centerAndZoom(point, 15);
+    });
+    //设置可滚轮缩放
+    map.enableScrollWheelZoom();
+    //设置比例尺控件在右上
+    var scaleControl = new BMap.ScaleControl({
+      anchor: BMAP_ANCHOR_TOP_RIGHT
+    });
+  </script>
 </body>
+
 </html>

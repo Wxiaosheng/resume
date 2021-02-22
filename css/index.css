@@ -139,3 +139,23 @@ h5{
 body>div:last-child div{
     display:none;
 }
+.jdt .project {
+  margin-bottom: 20px;
+}
+.jdt .project .project-name, .jdt .project .project-time {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.jdt .xmjl {
+  margin-bottom: 20px;
+}
+.jdt .xmjl .xmjl-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.jdt .xmjl p {
+  text-indent:2em;
+}
